@@ -1,0 +1,45 @@
+while True:
+ print("Enter Marks Obtained in 5 Subjects: ")
+ a = int(input('Enter obtained marks in first subject : '))
+ b = int(input('Enter obtained marks in second subject : '))
+ c = int(input('Enter obtained marks in third subject : '))
+ d = int(input('Enter obtained marks in fourth subjects : '))
+ e = int(input('Enter obtained marks in fifth subjects : '))
+
+ sum = a+b+c+d+e
+ t = int(input('Enter total marks for exam : '))
+ avg = (sum/t)*100
+
+ print(end="Total marks = ")
+ print(sum)
+ print(end="Percentage for ur Marks = ")
+ print(avg)
+
+
+ if(avg >= 90) :
+    print(' Ur Grade = A' )
+ elif(avg >= 80) :
+    print('Ur Grade = B' )
+ elif(avg >= 70) :
+    print('Ur Grade = C' )
+ elif(avg >= 60) :
+    print('Ur Grade = D' )
+ elif(avg >= 40) :
+    print('Ur Grade = E' )
+ else:
+    print('Ur Grade = F' )
+ if(avg >= 40) :
+    print('Status = PASS')
+ else:
+    print('Status = FAIL')
+
+ # check if user wants another calculation
+ # break the while loop if answer is n
+ next_calculation = input("Let's do next calculation? (s/n): ")
+ if next_calculation == "n":
+    break
+    
+ else:
+    print("Invalid Input")   
+
+print( "                          THANK YOU ^_^                        " )
